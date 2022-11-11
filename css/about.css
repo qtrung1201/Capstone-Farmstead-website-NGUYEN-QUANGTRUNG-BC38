@@ -477,6 +477,11 @@
     bottom: 50%;
     transform: translateY(50%);
     z-index: 2;}
+
+.commit .carousel-inner .carousel-item img{
+    object-fit: cover;
+    width: 100%;
+}
 .commit .carousel-caption .img{
     width: 30%;
 }
@@ -497,7 +502,7 @@
     color:#fb811e;
     font-weight: 600;
     display: inline-block;
-    margin-right: ;
+    
 }
 
 
