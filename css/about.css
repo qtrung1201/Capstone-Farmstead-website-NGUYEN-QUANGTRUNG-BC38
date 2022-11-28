@@ -286,8 +286,10 @@
     
 }
 
+
+
 .team .content .col{
-    max-width: 33.3333%;
+    width: 33.3333%;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -693,7 +695,162 @@
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
 
+/* phone(ngang) sm */
+@media screen and (max-width:768px){
+    .header .navbar-toggler{
+    display: inline;
+    background-color: transparent;
+    color: #fb811e;
+    border: none;
+    font-size: 20px;
+}
+    .header nav{ 
+    display: none;
+}
 
+.intro .row{
+    display: block;
+}
+
+.intro .row .col-left{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.intro .row .col-right{
+    width: 100%;
+}
+
+.stats .row{
+    display: block;
+}
+.stats .row .stats-col{
+    width: 100%;
+}
+
+.team .content{
+    display: block;
+}
+.team .content .col{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.team .title .row{
+    display: block;
+}
+
+.team .title .row .col-left{
+    width: 100%;
+}
+
+.team .title .row .col-right{
+    width: 100%;
+}
+
+.news .container .content{
+    margin: 0;
+}
+
+
+.commit .carousel-inner .carousel-item .carousel-caption{
+    display: block !important;
+}
+
+.commit .carousel-caption .img{
+    width: 100%;
+    margin-top: 30px;
+}
+.commit .carousel-caption .text p{
+    font-size: 15px;
+}
+
+.commit .carousel-caption .text span{
+    font-size: 20px;
+}
+
+.footer-row{
+    display: block;
+}
+.footer-row .footer-col{
+    width: 100%;
+}
+}
+
+
+/* phone (doc) xs */
+@media screen and (max-width:576px){
+
+.intro .row{
+    display: block;
+    padding: 0;
+}
+
+.intro .row .col-left{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.intro .row .col-right{
+  width: 100%;
+}
+
+.stats .row{
+    display: block;
+}
+.stats .row .stats-col{
+    width: 100%;
+}
+
+.team .content{
+    display: block;
+}
+.team .content .col{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.team .title .row{
+    display: block;
+}
+
+.team .title .row .col-left{
+    width: 100%;
+}
+
+.team .title .row .col-right{
+    width: 100%;
+}
+
+.news .container .content{
+    margin: 0;
+}
+
+
+.commit .carousel-inner .carousel-item .carousel-caption{
+    display: block !important;
+}
+
+.commit .carousel-caption .img{
+    width: 100%;
+    margin-top: 30px;
+}
+.commit .carousel-caption .text p{
+    font-size: 15px;
+}
+
+.commit .carousel-caption .text span{
+    font-size: 20px;
+}
+
+.footer-row{
+    display: block;
+}
+.footer-row .footer-col{
+    width: 100%;
+}
+}
+    
 
 
 

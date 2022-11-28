@@ -66,6 +66,10 @@
     z-index: 100;
 }
 
+.header .navbar-toggler {
+    display: none;
+}
+
 
 .header .header-content{
     display: flex;
@@ -117,17 +121,16 @@
 
 
 .carousel .row {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-right: -15px;
-    
     margin-left: -15px;
 }
 
 .carousel .row .banner-left{
-    width: 50%;
+    max-width: 50%;
     position: absolute;
     left: 10em;
     z-index: 1;
@@ -151,7 +154,7 @@
 .carousel .row .banner-left .banner-content .content-text{
     color: #707070;
     font-size: 20px;
-    font: weight 1px;;
+    font-weight: 1px;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
     font-family: 'Source Sans Pro', sans-serif !important;
@@ -351,7 +354,7 @@
 }
 
 .services .content .col{
-    max-width: 33.3333%;
+    width: 33.3333%;
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -517,7 +520,7 @@
 
 /* Menu */
 .menu{
-    width: 100%;
+    max-width: 100%;
 }
 
 .menu .row{
@@ -900,7 +903,250 @@ figure:hover::before {
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
 
+
+
+/* phone(ngang) sm */
+@media screen and (max-width:768px){
+    .header .navbar-toggler{
+    display: inline;
+    background-color: transparent;
+    color: #fb811e;
+    border: none;
+    font-size: 20px;
+}
+    .header nav{ 
+    display: none;
+}
+
+.carousel .row .banner-left .banner-left-content{
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
+.carousel .row .banner-right{
+    width: 100%;
+}
+.carousel .row .banner-left .farm-text{
+    font-size: 40px;
+    color: #eeeeee;
+    position: absolute;
+    margin-top: 30px;
+}
+.carousel .row .banner-left .banner-content h3{
+    font-size: 25px;
+    margin-top: 150px;
+    color:#fb811e;
+}
+
+
+.work .container{
+    padding: 30px 50px;
+}
+
+.work .row{
+    display: block;
+}
+
+.work .row .col-left{
+    width: 100%;
+}
+.work .row .col-right{
+    width: 100%;
+}
+
+.services .container{
+    padding: 0px 50px;
+}
+
+.services .title .row{
+display: block;
+}
+
+.services .title .row .col-left{
+    width: 100%;
+}
+
+.services .title .row .col-right{
+    width: 100%;
+}
+
+.services .content{
+    display: block;
+    width: 100%;
     
+}
+
+.services .content .col{
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.services .content .col .item{
+display: block;
+}
+
+.quality .row{
+    display: block;
+}
+.quality .row .col-left{
+    width: 100%;
+}
+
+.quality .row .col-right{
+    width: 100%;
+}
+
+
+.menu .row{
+    display: block !important;
+}
+
+
+.menu .row .item{
+    width: 100%;
+}
+
+.gallery-row{
+    display: block !important;
+}
+
+.gallery .gallery-row .gallery-col{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.commit .carousel-inner .carousel-item .carousel-caption{
+    display: block !important;
+}
+
+.commit .carousel-caption .img{
+    width: 100%;
+    margin-top: 30px;
+}
+.commit .carousel-caption .text p{
+    font-size: 15px;
+}
+
+.commit .carousel-caption .text span{
+    font-size: 20px;
+}
+
+.footer-row{
+    display: block;
+}
+.footer-row .footer-col{
+    width: 100%;
+}
+}
+
+
+/* phone (doc) xs */
+@media screen and (max-width:576px){
+
+
+.work .container{
+    padding: 30px 50px;
+}
+
+.work .row{
+    display: block;
+}
+
+.work .row .col-left{
+    width: 100%;
+}
+.work .row .col-right{
+    width: 100%;
+}
+
+.services .container{
+    padding: 0px 50px;
+}
+
+.services .title .row{
+display: block;
+}
+
+.services .title .row .col-left{
+    width: 100%;
+}
+
+.services .title .row .col-right{
+    width: 100%;
+}
+
+.services .content{
+    display: block;
+    width: 100%;
+    
+}
+
+.services .content .col{
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.services .content .col .item{
+display: block;
+}
+
+.quality .row{
+    display: block;
+}
+.quality .row .col-left{
+    width: 100%;
+}
+
+.quality .row .col-right{
+    width: 100%;
+}
+
+
+.menu .row{
+    display: block !important;
+}
+
+
+.menu .row .item{
+    width: 100%;
+}
+
+.gallery-row{
+    display: block !important;
+}
+
+.gallery .gallery-row .gallery-col{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.commit .carousel-inner .carousel-item .carousel-caption{
+    display: block !important;
+}
+
+.commit .carousel-caption .img{
+    width: 100%;
+    margin-top: 10px;
+}
+.commit .carousel-caption .text p{
+    font-size: 15px;
+}
+
+.commit .carousel-caption .text span{
+    font-size: 20px;
+}
+
+.footer-row{
+    display: block;
+}
+.footer-row .footer-col{
+    width: 100%;
+}
+}
     
 
 
